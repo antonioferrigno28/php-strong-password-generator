@@ -22,8 +22,8 @@ function generatePassword($numero, $chars) {
     return $generatedPassword;
     }
 
-    // La inizializzo di nuovo per una questione di scope
-    $generatedPassword = "";
+   
+     
 
 
     // Controllo che il numero sia settato
@@ -32,6 +32,10 @@ function generatePassword($numero, $chars) {
         $numero = $_GET["numero"];
         //chiamo la funzione ed il risultato verrà immagazinato in generatedPassword
         $generatedPassword = generatePassword($numero, $chars);
+        //Starto la sessione per poterci salvare la password nella variabile di sessione
+        //Salvo la password generata in una variabile di sessione
+        $_SESSION['password'] = $generatedPassword;
+        
     }
     
 ?>

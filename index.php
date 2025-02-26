@@ -1,5 +1,10 @@
 <?php 
+//require del file functions
 require_once "./functions.php";
+//start della sessione
+session_start();
+
+
 ?>
 
 <!DOCTYPE html>
@@ -10,18 +15,12 @@ require_once "./functions.php";
     <title>Document</title>
 </head>
 <body>
-    <form action="" method="GET">
+    <form action="showPassword.php" method="GET">
         <label for="numero">Inserisci la lunghezza della password desiderata(max 20 caratteri)</label>
         <input type="number" name="numero" min=1 max=20>
-        <button type="submit">Daje</button>
+        <button type="submit" >Daje</button>
     </form>
-    <?php
-    //Se la password viene generata
-    if($generatedPassword){
-        //Stampa pw
-        echo "<h1>La password generata è: <br>".$generatedPassword. "</h1>";
-    }
-    ?>
+  
     
 </body>
 </html>
