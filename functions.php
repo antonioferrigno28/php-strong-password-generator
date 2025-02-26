@@ -3,7 +3,7 @@
 
 //Definisco una variabile chars che è una stringa che contiene vari caratteri
 //servirà per estrarre randomicamente i caratteri che verranno inseriti nella pw
-$chars = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!$%()/=*[]@#';
+$chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!$%()/=*[]@#";
 
 
 
